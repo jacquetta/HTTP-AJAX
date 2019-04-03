@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 
+import './friendslist.css';
+
 
 class FriendsList extends React.Component{
     constructor(props){
@@ -22,11 +24,18 @@ class FriendsList extends React.Component{
 
     render(){
         return(
-        <div>
+        <div className='w3-row-padding w3-container'> 
             {this.state.friends.map(friend => (
-            <div class='friends-list'>
-                <p>{friend.name}</p>
-                <p>{friend.age}</p>
+            <div className='friendsList w3-card-4 w3-third'>
+                <header className='w3-container color-header'>
+                    <h3>{friend.name}</h3>
+                </header>
+                <div className='w3-container'>
+                    <p>age: {friend.age}</p>
+                    <p>email: {friend.email}</p>
+                </div>
+                <button className='color-btn'>Update</button>
+                <button className='color-btn'>Delete</button>
             </div>    
                     
             ))}
