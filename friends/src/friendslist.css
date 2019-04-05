@@ -1,0 +1,21 @@
+
+.friendsList{
+  margin: 1% auto;
+  background-color: white;
+}
+
+.color-header{
+    background-color: #3700b3;
+    color: white;
+}
+
+.color-btn{
+    background-color: #03dac5;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    margin: 4px 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
